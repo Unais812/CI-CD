@@ -1,0 +1,12 @@
+name: Test workflow 
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test workflow
+      uses: actions/checkout@v2
+    - name: Test practice workflow
+      run: echo Workflow completed
